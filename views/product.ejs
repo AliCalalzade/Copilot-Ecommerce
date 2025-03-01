@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        <%= product.name %> - E-Ticaret Sitesi
+    </title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>E-Ticaret Sitesi</h1>
+        <nav>
+            <a href="/">Ana Sayfa</a> |
+            <a href="/cart">Sepet</a>
+        </nav>
+    </header>
+    <main>
+        <div class="product-detail">
+            <div class="product-image">
+                <!-- Ürün görseli yoksa placeholder görüntüsü kullanılıyor -->
+                <img src="<%= product.image ? product.image : 'https://via.placeholder.com/500x500?text=Ürün+Görseli' %>"
+                    alt="<%= product.name %>">
+            </div>
+            <div class="product-info">
+                <h2>
+                    <%= product.name %>
+                </h2>
+                <p class="price">
+                    <%= product.price %> TL
+                </p>
+                <p class="description">
+                    <%= product.description %>
+                </p>
+                <a href="/add_to_cart/<%= product.id %>" class="button add-to-cart">Sepete Ekle</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        &copy; 2023 E-Ticaret Sitesi
+    </footer>
+</body>
+
+</html>

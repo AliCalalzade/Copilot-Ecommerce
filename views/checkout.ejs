@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout - E-Ticaret Sitesi</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>E-Ticaret Sitesi</h1>
+        <nav>
+            <a href="/">Ana Sayfa</a> |
+            <a href="/cart">Sepet</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Checkout</h2>
+        <form action="/checkout" method="POST">
+            <label for="name">Adınız:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="address">Adresiniz:</label>
+            <textarea id="address" name="address" required></textarea>
+            <button type="submit">Sipariş Ver</button>
+        </form>
+    </main>
+    <footer>
+        &copy; 2023 E-Ticaret Sitesi
+    </footer>
+</body>
+
+</html>
