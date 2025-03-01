@@ -15,8 +15,8 @@ First program I wrote with Copilot
 - ejs
 
 
-#Home page
+# Home page
 <img src='https://github.com/AliCalalzade/Copilot-Ecommerce/blob/79dfbf467e97c2acd460b4023d6dca0d404f315a/src/Home.png'/>
 
-#Basket page
+# Basket page
 <img src='https://github.com/AliCalalzade/Copilot-Ecommerce/blob/79dfbf467e97c2acd460b4023d6dca0d404f315a/src/Basket.png'/>
